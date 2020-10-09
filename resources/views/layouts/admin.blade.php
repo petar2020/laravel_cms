@@ -141,10 +141,10 @@
                             <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse nav nav-second-level">
                             <li>
-                                <a href="#">All Users</a>
+                                <a href="{{route('users.index')}}">All Users</a>
                             </li>
                             <li>
-                                <a href="#">Create User</a>
+                                <a href="{{route('users.create')}}">Create User</a>
                             </li>
                         </ul>
                     </li>
