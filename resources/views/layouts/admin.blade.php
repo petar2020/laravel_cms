@@ -54,10 +54,10 @@
             <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-user fa-fw"></i> {{Auth::user()->name}}  <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
-                    <li><a href="#"><i class="fa fa-user fa-fw"></i> Korisnicki profil</a>
+                    <li><a href="{{route('users.edit',Auth::user()->id)}}"><i class="fa fa-user fa-fw"></i> Korisnicki profil</a>
                     </li>
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i> Podesavanja</a>
                     </li>
@@ -156,13 +156,10 @@
                         <i class="fa fa-fw fa-caret-down"></i></a>
                     <ul id="demo1" class="collapse nav nav-second-level">
                         <li>
-                            <a href="#">All Posts</a>
+                            <a href="{{route('posts.index')}}">All Posts</a>
                         </li>
                         <li>
-                            <a href="#">Create Post</a>
-                        </li>
-                        <li>
-                            <a href="#">Edit Post</a>
+                            <a href="{{route('posts.create')}}">Create Post</a>
                         </li>
                     </ul>
                     </li>
@@ -181,9 +178,8 @@
                             </li>
                         </ul>
                     </li>
-
-
-{{--                    <li>--}}
+                </ul>
+                                     <li>
 {{--                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Users--}}
 {{--                            <i class="fa fa-fw fa-caret-down"></i></a>--}}
 {{--                        <ul id="demo" class="collapse nav nav-second-level">--}}

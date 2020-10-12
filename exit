@@ -1,0 +1,17 @@
+[33mcommit ed6a5ad42903b47b8acefa1304236ba368e5b5a9[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: petar2020 <petar.arsic14@hotmail.com>
+Date:   Fri Oct 9 15:22:30 2020 +0200
+
+    dodavanje slika, update profil
+
+[33mcommit aee8a8a761bbf097a4cea8667bf80bc3847ec3fa[m
+Author: petar2020 <petar.arsic14@hotmail.com>
+Date:   Fri Oct 9 11:01:33 2020 +0200
+
+    korisnici sa slikama
+
+[33mcommit 88c0b73465b761185d4c9ecb62482014e1fcf2a0[m
+Author: petar2020 <petar.arsic14@hotmail.com>
+Date:   Thu Oct 8 15:26:23 2020 +0200
+
+    dodavene korisnika u bazu i prikazivanje
