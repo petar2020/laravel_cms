@@ -5,7 +5,7 @@
 @section('content')
 
     <h1>Create Post</h1>
-
+<div class="row">
     {!! Form::open(['method'=>'POST', 'action'=>'AdminPostsController@store', 'files'=>true]) !!}
 
             <div class="form-group">
@@ -14,11 +14,11 @@
             </div>
             <div class="form-group">
                 {!! Form::label('category_id', 'Category:') !!}
-                {!! Form::select('category_id',array(''=>'options'), null, ['class'=>'form-control']) !!}
+                {!! Form::select('category_id',array(1=>'PHP', 0=>'JavaScript'), 0, ['class'=>'form-control']) !!}
             </div>
             <div class="form-group">
                 {!! Form::label('photo_id', 'Photo:') !!}
-                {!! Form::file('photo_id',  ['class'=>'form-control']) !!}
+                {!! Form::file('photo_id',  ['class'=>'']) !!}
             </div>
             <div class="form-group">
                 {!! Form::label('body', 'Description:') !!}
@@ -29,5 +29,9 @@
               {!! Form::submit('Create Post', ['class'=>'btn btn-primary']) !!}
             </div>
 
-       {!! Form::close() !!}
+       {!! Form::close() !!}</div>
+    <div class="row">
+        @include('includes.form_error')
+    </div>
+
 @stop
